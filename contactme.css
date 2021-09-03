@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.contact-container {
+  background: #6070ff;
+  background-image: url(./assets/contact\ form\ shapes-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 100% 30px, 50% 98%;
+  border-radius: 90px 0 0 0;
+  margin-top: 5.7rem;
+  padding-bottom: 1rem;
+}
+
+.contact-container-flex {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto 24px auto 24px;
+}
+
+.contact-me-title {
+  margin-top: 103px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-me-title,
+.if-you {
+  align-self: center;
+  text-align: center;
+}
+
+.if-you {
+  margin-top: 12px;
+  color: #ebebff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.input-form {
+  font-family: "poppins", sans-serif;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.username,
+.email {
+  height: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 38px 16px 15px;
+  color: #172b4d;
+}
+
+.textarea {
+  height: 170px;
+  color: #b3bac5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.submit {
+  width: 43%;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  color: #6070ff;
+}
+
+.submit:hover {
+  background: #6070ff;
+  color: #fff;
+  transition: 1s;
+  border: #fff 1px solid;
+}
+
+.imgcontainer-contact {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-container-flex {
+    background: url(assets/contactformbackground.png);
+  }
+
+  .contact-me-title,
+  .btn-container {
+    margin: 2rem 30% 0 30%;
+  }
+
+  .if-you {
+    margin: 2rem 28% 0 28%;
+  }
+
+  .input-form {
+    margin: 0.8rem 30% 0 30%;
+    border-radius: unset;
+  }
+
+  .textarea {
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgcontainer-contact {
+    display: none;
+  }
+}

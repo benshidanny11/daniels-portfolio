@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contactme.css" />
+    <link rel="stylesheet" href="menu.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F4FJEBTXJL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-F4FJEBTXJL');
+    </script>
+  </head>
+
+  <body>
+    <div class="container-main">
+      <nav class="menu-container show-menu" id="menu-list">
+        <div class="img-container">
+          <a href="#" class="hide-menu">
+            <img src="assets/times-solid.svg" alt=""
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#portfolio" class="hide-menu">Portfolio</a></li>
+            <li><a href="#aboutme" class="hide-menu">About me</a></li>
+            <li><a href="#contactme" class="hide-menu">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <a href="#">
+          <h3 class="logo">My logo</h3>
+        </a>
+        <div class="tabs-container">
+          <ul class="tabs">
+            <li class="tabitem"><a href="#portiforio">Portfolio</a></li>
+            <li class="tabitem"><a href="#about">About</a></li>
+            <li class="tabitem"><a href="#contactme">Contact</a></li>
+          </ul>
+          <nav class="menubutton">
+            <a href="#" id="menu-btn"
+              ><img src="assets/bars-solid.svg" alt=""
+            /></a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="inner-intro-container" id="self-intro">
+          <div class="introductionsection">
+            <h1>
+              I'm Daniel<br />
+              Grad to see you!
+            </h1>
+            <p>
+              I’m a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+            <h5>Let's connect</h5>
+
+            <div class="linkcontainer">
+              <ul class="links">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/twitter-brands.svg"
+                      alt=""
+                      class="icons twitterlogo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/linkedin-brands.svg"
+                      alt=""
+                      class="icons linkedinlogo"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/medium-brands.svg"
+                      alt=""
+                      class="icons mediumlogo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/github-brands.svg"
+                      alt=""
+                      class="icons githublogo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/angellist-brands.svg"
+                      alt=""
+                      class="icons angellistlogo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="project-container" id="projects-container"></div>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          aria-hidden="true"
+          aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title">
+                  <h1 class="modal-title" id="exampleModalToggleLabel2"></h1>
+                  <ul class="company">
+                    <li class="item item1">
+                      <h3 id="detail1"></h3>
+                    </li>
+                    <li class="item item2">
+                      <h3 id="detail2"></h3>
+                    </li>
+                    <li class="item item2">
+                      <h3 id="detail3"></h3>
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="work-modal">
+                  <div class="project-modal">
+                    <img id="img-project" alt="" src="assets/project1.png" />
+                  </div>
+                  <div class="row mt-4 ds-block">
+                    <div class="col-7 col-fil">
+                      <p id="project-description"></p>
+                    </div>
+
+                    <div class="col-5 col-fil">
+                      <ul class="tools">
+                        <li class="item item1" id="tool1"></li>
+                        <li class="item item2" id="tool2"></li>
+                        <li class="item item2" id="tool3"></li>
+                      </ul>
+                      <hr class="separator" />
+
+                      <div class="d-flex mt-4">
+                        <a
+                          class="btn-modal"
+                          id="livebtn"
+                          target="blank"
+                          href="#"
+                          >See live
+                          <img
+                            src="assets/live-icon.png"
+                            alt=""
+                            class="icon-btn" /></a
+                        ><a
+                          href="#"
+                          class="btn-modal"
+                          id="codebtn"
+                          target="blank"
+                          >See code
+                          <img
+                            src="assets/git-icon.png"
+                            alt=""
+                            class="icon-btn"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="innerworkcontainer mt-4" id="aboutme">
+          <div class="aboutme">
+            <div class="aboutme-inner">
+              <div class="description">
+                <div class="me-text">
+                  <h1 class="about-me-title">About my self</h1>
+                  <p>
+                    I’m a software developer! I can help you build a product ,
+                    feature or website Look through some of my work and
+                    experience! If you like what you see and have a project you
+                    need coded, don’t hestiate to contact me.
+                  </p>
+                  <h5>Let's connect</h5>
+
+                  <div class="linkcontainer">
+                    <ul class="links">
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/twitter-brands.svg"
+                            alt=""
+                            class="icons twitterlogo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/linkedin-brands.svg"
+                            alt=""
+                            class="icons linkedinlogo"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/medium-brands.svg"
+                            alt=""
+                            class="icons mediumlogo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/github-brands.svg"
+                            alt=""
+                            class="icons githublogo"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/angellist-brands.svg"
+                            alt=""
+                            class="icons angellistlogo"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-resume">
+                    <a href="#" class="btn">Get my resume</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tools-skills">
+                <ul class="list">
+                  <li class="listitem expanded">
+                    <div class="txtcontainer">
+                      <h3>Languages</h3>
+                    </div>
+                    <div class="imgcontainer">
+                      <img
+                        src="assets/expand.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="grid">
+                      <div class="grid-item">
+                        <div class="imgcontainer1">
+                          <img
+                            src="assets/jslang.png"
+                            alt=""
+                            width="35"
+                            height="35"
+                          />
+                        </div>
+                        <div class="txtcontainer">
+                          <p>Java script</p>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="imgcontainer2">
+                          <img
+                            src="assets/htmllang.png"
+                            alt=""
+                            width="35"
+                            height="35"
+                          />
+                        </div>
+                        <div class="txtcontainer">
+                          <p>HTML</p>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="imgcontainer3">
+                          <img
+                            src="assets/csslang.png"
+                            alt=""
+                            width="35"
+                            height="35"
+                          />
+                        </div>
+                        <div class="txtcontainer">
+                          <p>CSS</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="listitem">
+                    <div class="txtcontainer">
+                      <h3>Fameworks</h3>
+                    </div>
+                    <div class="imgcontainer">
+                      <img
+                        src="assets/collapse.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                    </div>
+                  </li>
+                  <li class="listitem">
+                    <div class="txtcontainer">
+                      <h3>Skills</h3>
+                    </div>
+                    <div class="imgcontainer">
+                      <img
+                        src="assets/collapse.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-container" id="contactme">
+              <form
+                class="contact-form"
+                action="https://formspree.io/f/xzbykgjg"
+                method="POST"
+                id="contactme-form"
+              >
+                <div class="contact-container-flex">
+                  <h1 class="contact-me-title">Contact me</h1>
+                  <p class="if-you">
+                    If you have an application you are interested in developing,
+                    a feature that you need built or a project that needs
+                    coding. I’d love to help with it
+                  </p>
+                  <input
+                    class="input-form username"
+                    maxlength="30"
+                    placeholder="Pick a name..."
+                    type="text"
+                    name="fullname"
+                    id="name"
+                    required
+                  />
+                  <input
+                    class="input-form email"
+                    type="email"
+                    placeholder="Email"
+                    name="emailaddress"
+                    id="email"
+                    required
+                  />
+                  <textarea
+                    class="input-form textarea"
+                    maxlength="500"
+                    minlength="10"
+                    name="message"
+                    placeholder="Write your message here..."
+                    id="message"
+                    required
+                  ></textarea>
+                  <div class="btn-container">
+                    <button class="submit" type="submit" name="btnsubmit">
+                      Get In Touch
+                    </button>
+                    <p class="p-validate-message" id="validate-message"></p>
+                  </div>
+                </div>
+              </form>
+              <div class="imgcontainer-contact">
+                <img src="assets/Shape.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="fromvalidation.js"></script>
+  </body>
+</html>
